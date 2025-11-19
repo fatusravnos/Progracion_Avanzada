@@ -8,8 +8,8 @@ public class ProduccionAeronaves {
 
 // Clase fabricante
 class Fabricante {
-    private String nombre;
-    private String pais;
+    String nombre;
+    String pais;
     
     public void iniciarProduccion() {
         // for crea 3 modelos diferentes
@@ -39,9 +39,9 @@ class Fabricante {
 
 // Clase modelo de aeronave
 class Modelo {
-    private String marca;
-    private String nombreModelo;
-    private String paisOrigen;
+    String marca;
+    String nombreModelo;
+    String paisOrigen;
     
     public void configurar(String marca, String modelo, String pais) { // Metodo para configurar el modelo
         this.marca = marca;
@@ -97,8 +97,8 @@ class Modelo {
 
 // Clase para aeronave individual
 class Aeronave {
-    private String tipoConfiguracion;
-    private String estadoProduccion;
+    String tipoConfiguracion;
+    String estadoProduccion;
     
     public void producir(String marca, String modelo, String configuracion) { // Metodo para producir la aeronave
         this.tipoConfiguracion = configuracion;
@@ -150,9 +150,9 @@ class Aeronave {
 
 // Clase para el motor de la aeronave
 class Motor {
-    private String tipo;
-    private int potencia;
-    private String ubicacion;
+    String tipo;
+    int potencia;
+    String ubicacion;
     
     public void instalar(String ubicacion, String tipoAeronave) { // Metodo para instalar el motor
         this.ubicacion = ubicacion;
@@ -205,9 +205,9 @@ class Motor {
 
 // Clase para asientos
 class Asiento {    
-    private String clase;
-    private int cantidad;
-    private String ubicacion;
+    String clase;
+    int cantidad;
+    String ubicacion;
     
     public void instalar(String tipoAeronave, String area) { // Metodo para instalar asientos
         this.ubicacion = area;
